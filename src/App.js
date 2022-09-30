@@ -24,6 +24,7 @@ function App() {
 
   const clear = () => {
     setRes(0);
+    setExp('');
   }
 
   const handleKeyPress = (e) => {
