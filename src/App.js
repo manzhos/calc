@@ -33,12 +33,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div style={{fontSize:"10px", color:"lightgrey"}}>type math expression</div>
-        <div style={{display:"inline-block", position:"relative"}}>
+        <div style={{fontSize:"10px", color:"grey", margin:"0 auto 5px"}}>type math expression</div>
+        <div style={{display:"inline-block", height:"30px", width:"222px", position:"relative"}}>
           <input 
             id="math_expression" 
             type="text" 
-            style={{padding:"5px 35px 5px 15px", borderRadius:"20px"}}
+            style={{padding:"5px 35px 5px 15px", borderRadius:"20px", position:"absolute", left:"0", zIndex:"5"}}
             onChange={(e) => setExp(e.target.value)} 
             onKeyPress={handleKeyPress}
             value={exp} 
